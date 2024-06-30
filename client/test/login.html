@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+    <!--引入vue.js核心文件-->
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app1">
+        <!--将msg的值绑定到p元素-->
+        <p>{{msg}}</p>
+    </div>
+    <script>
+        //创建Vue实例
+        var vm=new Vue({
+            el:"#app1",
+            data:{
+                msg:"Hello World"
+            }
+        });
+    </script>
+</body>
+</html>
